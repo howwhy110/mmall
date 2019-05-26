@@ -1,0 +1,82 @@
+/* top_header默认白底黑字
+	有border-bottom,高120px,
+	
+	同时有.top_header .logo_name .to_small时
+	向下滚动XXX像素后，用动画效果变成黑色，高50px
+	*****用在详情页*****
+
+	同时有.top_header .logo_name .to_small .no-logo时
+	默认显示黑底白字，向下滚动XXX像素后，从no_logo
+	变成显示logo，
+	******用在首页和商品页*******
+ */
+.top_header{
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.85);
+	position: fixed;
+	left: 0;
+	right: 0;
+	color: #fff;
+	z-index: 1;
+	box-sizing: border-box;
+}
+ /*  控制内容区域居中和宽度1036px */
+.top_header>.header_inner{
+	width: 1036px;
+	margin: 0 auto;
+	position: relative;
+}
+/* header内3个div显示在一行 */
+.top_header>.header_inner>div{
+	float: left;
+}
+/* 左边div */
+.top_header>.header_inner>div:first-child{
+	position: relative;
+	margin: 0 auto;
+	line-height: 50px;
+}
+.top_header>div.header_inner>div>.logo{
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	top: 1px;
+	z-index: 5;
+}
+.top_header>div.header_inner>div>span{
+	margin-left: 35px;
+}
+.top_header>div.header_inner>div>div.moving_block{
+	position: absolute;
+	top: 11px;
+	left: 100px;
+	height: 0;
+	border-left: 100px solid #fff;
+	border-right: 10px solid transparent;
+	border-bottom: 30px solid #fff;
+	z-index: 1;
+	opacity: 0.85;
+}
+/* 中间div */
+.top_header>div>:nth-child(2)>ul{
+	position: relative;
+	float: right;
+	margin-left: 350px;
+	z-index: 5;
+	line-height: 50px;
+}
+.top_header>div>:nth-child(2)>ul li{
+	display: inline-block;
+	padding-left: 30px;
+	height: 50px;
+}
+.top_header>div>:nth-child(2)>ul a{
+	text-decoration: none;
+	color: #fff;
+}
+.top_header>div>:nth-child(2)>ul li:hover{
+	color: #000;
+}
+/* 右边div */

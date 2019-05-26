@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*::selection{
+	background: rgba(255,255,0,0.85);
+	color: #000;
+}
+body{
+	font-size: 14px;
+	font-family:  PingFangSC,-apple-system,Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+	background: #444;
+}
