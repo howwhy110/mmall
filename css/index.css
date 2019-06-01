@@ -1,0 +1,239 @@
+/*section_w 首页主体第一部分宽度 */ 
+section>div:first-child{
+	/* border: 2px dashed blue; */
+}
+.section_w{
+	width: 1036px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+/* sec_l首页左边宽度 */
+.sec_l{
+	width: 214px;
+	float: left;
+	/* top: ; */
+}
+/* logo + 手风琴*/
+.sec_l>img{
+	width: 160px;
+	margin-left: 20px;
+	padding-bottom: 48px;
+}
+/* sec_l_list 左边logo下列表样式 */
+.sec_l>.sec_l_list{
+	width: 186px;
+	height: 256px;
+	margin-top: ;
+	padding: 10px;
+	/* border: 1px solid red; */
+}
+.sec_l>.sec_l_list>div a{
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+/* sec_m首页中间 搜索栏 + 轮播图 + 商品展示 */
+/* sec_m宽度 */
+.sec_m{
+	width: 645px;
+	height: 410px;
+	float: left;
+	margin-left: 6px;
+}
+.sec_m::after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+/* 搜索栏 */
+.sec_m>.sec_search{
+	/* border: 1px solid red; */
+	height: 90px;
+}
+/* 中间搜索栏样式 */
+.sec_m>.sec_search>div{
+	width: 330px;
+    margin-left: 120px;
+    /* margin-top: -20px; */
+}
+.bor{
+	border-bottom: 2px solid black;
+	display: inline-block;
+	height: 30px;
+}
+.bor>img{
+	width: 20px;
+	position: relative;
+    top: 5px;
+    margin-bottom: 4px;
+}
+.bor>input{
+	width: 300px;
+	border: 0;
+	outline: 0;
+}
+.btn_sec_m_search{
+	background: #000;
+	width: 64px;
+	height: 30px;
+	color: #fff;
+	font-weight: 600;
+	border: 0;
+	outline: 0;
+	position: relative;
+	top: -5px;
+}
+/* 中间搜索栏下list文字样式 */
+.sec_m_search_list{
+	margin-top: 10px;
+}
+.sec_m_search_list div{
+	display: inline-block;
+}
+.sec_m_search_list div>ul{
+	list-style-type: none;
+	padding: 0;
+	font-size: 12px;
+}
+.sec_m_search_list li{
+	float: left;
+	line-height: 12px;
+}
+.sec_m_search_list a{
+	text-decoration: none;
+	color: #4a4a4a;
+	padding: 4px 10px 2px 0;
+}
+/* 中间轮播和小图 */
+.sec_m>div:last-child{
+	float: left;
+}
+.sec_m>div>img:first-child{
+	margin-right: 6px;
+}
+.sec_m>div>img:nth-child(2),.sec_m>div>img:nth-child(3){
+	float:right;
+}
+.sec_m>div>img:nth-child(3){
+	position: relative;
+	top: -158px;
+}
+/* sec_r首页右边 */
+.sec_r{
+	width: 165px;
+	float: right;
+	position: relative;
+	top: 90px;
+}
+/* 微信图标 */
+.wx_app{
+	width: 125px;
+	position: absolute;
+	top: 60px;
+	right: 210px;
+	display: none;
+}
+.section_w:hover .wx_app{
+	display: block;
+}
+/* 主体右边登录框 */
+.side_welcome img{
+	width: 165px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.welcome_bblock{
+	position: absolute;
+	width: 139px;
+	height: 38px;
+	background: #010e17;
+	text-align: center;
+	top: 100px;
+	left: 13px;
+}
+.welcome_bblock span{
+	text-decoration: none;
+	color: #fff;
+	line-height: 38px;
+}
+/* 小图标 */
+.sec_r_icon{
+	width: 80px;
+	height: 20px;
+	position: absolute;
+	top: 155px;
+	left: 20px;
+}
+.sec_r_icon span{
+	color: rgba(250,250,250,0.7);
+}
+.blur_border:hover{
+	box-shadow: 0px 0px 10px 2px #00f3ff;
+}
+.r_bg_brown{
+	background: #8a7b49;
+	position: absolute;
+	width: 165px;
+	height: 120px;
+	top: 193px;
+	right: 0;
+}
+.r_bg_brown>div{
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 160px;
+	height: 70px;
+	font-size: 16px;
+	color: rgba(250,250,250,0.7);
+
+}
+.r_bg_brown>div>div{
+	margin-top: 25px;
+}
+.r_bg_brown span{
+	font-size: 25px;
+}
+.brown_c{
+	position: absolute;
+	top: 193px;
+	right: 0;
+	border-bottom: 120px solid #807143;
+	border-left: 35px solid transparent;
+	width: 20px;
+}
+/* indexbig间隔图 */
+.index_big_img{
+	width: 1036px;
+	height: 150px;
+	margin: 0 auto;
+	background-image: url("../img/indexbigimg/keyboard1.png");
+	background-position: 20% 50%;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+}
+/* 1F 机械键盘 */
+#kbdList{
+	width: 1036px;
+	margin: 0 auto;
+	margin-top: 15px;
+	box-sizing: border-box;
+
+}
+#kbdList .listItem{
+	width: 230px;
+	height: 220px;
+	display: inline-block;
+	border: 1px solid red;
+	color: #000;
+	position: relative;
+}
+.lwTop{
+	border: 1px solid blue;
+	background: rgba(59,116,183,.06);
+}
+.lwTop img{
+	/* border: 1px solid green; */
+	width: 100%;
+}

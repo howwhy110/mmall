@@ -1,0 +1,70 @@
+/* footer_w整体宽度 */
+.footer_w{
+	width: 100%;
+	height: 360px;
+	color: rgba(200,200,200,.9);
+	background: #000;
+}
+/* footer 主体大小 */
+.footer_w>div{
+	width: 1036px;
+	height: 280px;
+	margin: 60px auto 20px;
+}
+/* 3个列表 */
+.foot_col{
+	width: 200px;
+	height: 226px;
+	float: left;
+}
+/* 列表ul样式 */
+.foot_col ul{
+	list-style: none;
+	padding: 0;
+	font-size: 12px;
+}
+/* 列表a标签样式 */
+.foot_col a{
+	text-decoration: none;
+	color: rgba(150,150,150,.8);
+}
+.footer_icon{
+	margin-top: 20px;
+}
+.footer_icon span{
+	font-size: 20px;
+}
+/* 右边切换语言和国际商城 */
+.foot_right{
+	float: right;
+}
+.foot_right ul{
+	list-style: none;
+}
+.foot_right .iconfont .icon-yuyan，.foot_right .iconfont .icon-ai-cart{
+	color: rgba(250,250,250,.8);
+	font-size: 18px;
+}
+.foot_right span{
+	color: rgba(150,150,150,.8);
+	font-size: 14px;
+}
+/* hr线 */
+.line{
+	margin: 8px 0;
+	border: none;
+	clear: both;
+	border-bottom: 1px solid #121212;
+}
+/* 底部 */
+.footer_bottom{
+	font-size: 10px;
+	color: #999;
+}
+.foot_logo{
+	position: absolute;
+	width: 102px;
+	opacity: 0.4;
+	top: 300px;
+	right: 230px;
+}
