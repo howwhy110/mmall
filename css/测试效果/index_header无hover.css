@@ -90,13 +90,13 @@
 	transform: translate(0,0);
 }
 /* 右边div */
-.top_header>div>:nth-child(3)>div>img{
+.top_header>div>:nth-child(3)>img{
 	width: 20px;
 	position: relative;
 	top: 13px;
 	left: 30px;
 }
-.top_header>div>:nth-child(3)>div>img:hover{
+.top_header>div>:nth-child(3)>img:hover{
 	opacity: 0.6;
 }
 .top_header>div>:nth-child(3)>span{
@@ -105,48 +105,3 @@
 	top: -10px;
 	left: 28px;
 }
-/* hover变搜索 */
-/* .sec_search{
-	height: 50px;
-	transform-origin: center top;
-	transform: rotateX(90deg);
-	transition: 0.5s;
-	border: 5px solid red;
-	position: absolute;
-	z-index: 10;
-	left: 540px;
-	top: 50px;
-}
-.bor{
-	border-bottom: 2px solid #fff;
-	display: inline-block;
-	height: 30px;
-}
-.bor>img{
-	width: 20px;
-	position: relative;
-    top: 5px;
-    margin-bottom: 4px;
-}
-.bor>input{
-	width: 300px;
-	border: 0;
-	outline: 0;
-}
-.btn_sec_m_search{
-	background: #fff;
-	width: 64px;
-	height: 30px;
-	color: #000;
-	font-weight: 600;
-	border: 0;
-	outline: 0;
-	position: relative;
-	top: -5px;
-}
-#_hover{
-	border: 1px solid red;
-}
-#_hover:hover .sec_search{
-	transform: rotateX(-90deg);
-} */

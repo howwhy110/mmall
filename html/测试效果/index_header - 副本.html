@@ -4,19 +4,23 @@
 	<meta charset="UTF-8">
 	<title>主页顶部黑色</title>
 	<link rel="stylesheet" type="text/css" href="../css/comm.css">
-	<link rel="stylesheet" type="text/css" href="../css/index_header.css">
+	<link rel="stylesheet" type="text/css" href="../css/index_header_copy.css">
 	<style type="text/css">
 		/* .test{
 			border: 1px solid red;
 		} */
 	</style>
+	<script type="text/javascript">
+		function slide(){
+			document.getElementById("moving_block").style.transition="translateX(100px)";
+		}
+	</script>
 </head>
 <body>
 	<!-- 顶部黑条 -->
 	<div class="top_header">
 		<!-- 头宽度div -->
 		<div class="header_inner">
-			<!-- 完成后删除test类 -->
 			<div class=" test">
 				<!-- 左边文字 -->
 				
@@ -24,12 +28,12 @@
 					<b>z</b>Frontier
 				</a>
 				<span>装备前线</span>
-				<div class="moving_block"></div>
+				<div id="moving_block" onmouseover="slide()"></div>
 			</div>
 				<!-- 中间导航 -->
 			<div>
 				<ul class="test">
-					<li>
+					<li >
 						<a href="#">装备社区</a>
 					</li>
 					<li>
@@ -44,25 +48,12 @@
 				</ul>
 			</div>	
 				<!-- 右边登陆 -->
-			<div>
-				<div id="_hover">	
-					<img src="../img/search.png">
-					<!-- hover变出的搜索 -->
-					<!-- <div class="sec_search">
-						<div class='bor'>
-							<img src="../img/search.png">
-							<input type="text" name="">
-						</div>
-							<button class="btn_sec_m_search">
-							搜索
-						</button>
-					</div> -->
-				</div>
+			<div>	
+				<img src="../img/search.png">
 				<span>
-					<a href="#">登陆/</a><a href="#">注册</a>
+					<a href="#">登陆</a>/<a href="#">注册</a>
 				</span>
 			</div>
-
 		</div>
 	</div>
 </body>
