@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品列表页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/comm.css">
+	<link rel="stylesheet" type="text/css" href="./css/iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="./css/list.css">
+	<link rel="stylesheet" type="text/css" href="./css/list_header.css">
+</head>
+<body onload="list()">
+	<header>
+		<!-- 顶部黑条 -->
+	<div class="top_header">
+		<!-- 头宽度div -->
+		<div class="header_inner">
+			<div class="headerLeft">
+				<!-- 左边文字 -->
+				
+				<a href="javascript:;" class="logo">
+					<b>z</b>Frontier
+				</a>
+				<span>装备前线</span>
+				<div class="moving_block"></div>
+			</div>
+				<!-- 中间导航 -->
+			<div class="navBar">
+				<ul class="barItem">
+					<li class="dropList">
+						<a href="javascript:;">装备社区</a>
+						<ul class="dropItem">
+							<li><a href="javascript:;">装备展示区</a></li>
+							<li><a href="javascript:;">zf生活</a></li>
+							<li><a href="javascript:;">提问区</a></li>
+							<li><a href="javascript:;">发车发车！</a></li>
+							<li><a href="javascript:;">参议院</a></li>
+							<li><a href="javascript:;">交易信息区</a></li>
+							<li><a href="javascript:;">装备情报</a></li>
+						</ul>
+					</li>
+					<li class="dropList">
+						<a href="javascript:;">装备商店</a>
+						<ul class="dropItem">
+							<li><a href="javascript:;">机械键盘</a></li>
+							<li><a href="javascript:;">键帽</a></li>
+							<li><a href="javascript:;">发烧HiFi</a></li>
+							<li><a href="javascript:;">模玩手办</a></li>
+						</ul>
+					</li>
+					<li class="dropList">
+						
+						<a href="javascript:;">发车投票</a>
+					</li>
+					<li class="dropList">
+						<a href="javascript:;">MYKB</a>
+						<ul class="dropItem">
+							<li><a href="javascript:;">定制工具</a></li>
+							<li><a href="javascript:;">热门设计</a></li>
+							<li><a href="javascript:;">MYKB plus 主题键帽</a></li>
+							<li><a href="javascript:;">定制说明</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>	
+				<!-- 右边登陆 -->
+			<div class="headerRIght">
+				<div>
+					<div class="_hover">	
+						
+						<!-- hover变出的搜索 -->
+						<!-- <div class="sec_search">
+							<div class='bor'>
+								<img src="../img/search.png">
+								<input type="text" name="">
+							</div>
+								<button class="btn_sec_m_search">
+								搜索
+							</button>
+						</div> -->
+					</div>
+					<span class="iconfont icon-fangdajing"></span>
+					<span>
+						<a href="javascript:;">登陆/</a><a href="javascript:;">注册</a>
+					</span>
+				</div>	
+			</div>
+
+		</div>
+	</div>
+	<!-- 顶部黑条下面类别 -->
+	<div class="familyNav">
+		<nav class="navList">
+			<a href="#" class="navItem">
+				<img src="../img/product/list/kbd.jpg">
+				<span class="listTitle">机械键盘</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/hifi.jpg">
+				<span class="listTitle">音频HiFi</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/dianjing.jpg">
+				<span class="listTitle">电竞装机</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/shubiao.jpg">
+				<span class="listTitle">鼠标</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/shouban.png">
+				<span class="listTitle">模玩手办</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/kindle.jpg">
+				<span class="listTitle">数码日常</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/kindle2.jpg">
+				<span class="listTitle">特惠装备</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/kbd3.jpg">
+				<span class="listTitle">砍价购</span>	
+			</a>
+			<a href="#" class="navItem">
+				<img src="../img/product/list/borrow.png">
+				<span class="listTitle">装备租赁</span>	
+			</a>
+		</nav>
+	
+	</header>
+	<section>
+		<div class="searchBox">
+			<div class="search">
+				<input type="text" name="">
+				<div class="keyWords">
+					<a href="javascript:;">蒸汽朋克</a>
+					<a href="javascript:;">模玩</a>
+					<a href="javascript:;">畅玩年费会员</a>
+				</div>
+				<button class="search-icon">
+					<img src="../img/search_dark.png">
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="filterTitle">
+		<div class="filter-title">机械键盘</div>
+		<div class="filterList">
+			<div class="titleBold">子类</div>
+			<div>
+				<div class="_listWrap">
+					<a href="javascript:;" class=_listTag>量产键盘</a>
+					<a href="javascript:;" class=_listTag>客制化套件</a>
+					<a href="javascript:;" class=_listTag>客制化配件</a>
+					<a href="javascript:;" class=_listTag>轴体</a>
+					<a href="javascript:;" class=_listTag>键帽</a>
+					<a href="javascript:;" class=_listTag>WASD主题定制</a>
+				</div>
+			</div>
+			<div class="titleBold">品牌/厂商</div>
+			<div>
+				<div class="_listWrap">
+					<a href="javascript:;" class=_listTag>Logitech 罗技</a>
+					<a href="javascript:;" class=_listTag>Akko</a>
+					<a href="javascript:;" class=_listTag>ALF</a>
+					<a href="javascript:;" class=_listTag>Alpaca Keyboards</a>
+					<a href="javascript:;" class=_listTag>CapsUnlocked</a>
+					<a href="javascript:;" class=_listTag>CHERRY</a>
+					<a href="javascript:;" class=_listTag>Das</a>
+					<a href="javascript:;" class=_listTag>Desk Candy</a>
+					<a href="javascript:;" class=_listTag>DURGOD 杜伽</a>
+				</div>
+			</div>
+			<div class="titleBold">连接方式</div>
+			<div>
+				<div class="_listWrap">
+					<a href="javascript:;" class=_listTag>蓝牙无线</a>
+					<a href="javascript:;" class=_listTag>USB Type-C</a>
+				</div>
+			</div>
+			<div class="titleBold">更多筛选</div>
+			<div>
+				<div class="_listWrap">
+					<a href="javascript:;" class=_listTag>国际直通车</a>
+				</div>
+			</div>
+			<div>
+				<div class="_listWrap_bottom">
+					<a href="javascript:;" class="iconfont icon-checkempty">
+					<span>在售装备</span>
+					</a>
+					<a href="javascript:;" class="iconfont icon-checkempty">
+					<span>租赁装备</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="listContent">
+		<div class="list-con" id='load_list'>
+			
+		</div>
+		<button onclick="loadMore()" class="loadM">加载更多</button>
+	</section>
+	<footer></footer>
+	<script src="./js/jquery-1.11.3.js"></script>
+	<script src="./js/list.js"></script>
+	<script src="./js/footer.js"></script>
+</body>
+</html>

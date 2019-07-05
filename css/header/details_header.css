@@ -1,0 +1,187 @@
+.top_header{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	position: fixed;
+	color: #000;
+	z-index: 1;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,.3);
+	transition: all .2s linear;
+}
+.top_header_thin{
+	height: 50px;
+ 	background: rgba(0,0,0,0.85);
+ 	color: #fff;
+ 	box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	transition: all .2s linear;
+}
+/*  控制内容区域居中和宽度1200px */
+.top_header>.header_inner{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.header_inner a{
+	text-decoration: none;
+	color: #000;
+	line-height: 120px;
+	transition: all .2s linear;
+}
+.header_inner_thin a{
+	text-decoration: none;
+	color: #fff;
+	line-height: 50px;
+	transition: all .2s linear;
+}
+/* 左边div */
+.headerLeft{
+	position: absolute;
+	left: 0;
+	width: 220px;
+	height: 120px;
+	line-height: 120px;
+	transition: all .2s linear;
+}
+.headerLeft_thin{
+	height: 50px;
+	line-height: 50px;
+	transition: all .2s linear;
+}
+/* logo */
+.headerLeft>.logo{
+	font-size: 28px;
+	line-height: 120px;
+	text-decoration: none;
+	color: #000;
+	z-index: 1;
+	transition: all .2s linear;
+}
+.headerLeft>.logo_thin{
+	font-size: 20px;
+	line-height: 50px;
+	color: #fff;
+	/* transition: all .2s linear; */
+}
+/* 滑块上的字 */
+.headerLeft span{
+	width: 200px;
+	padding-left: 35px;
+	color: #fff;
+	line-height: 120px;
+	z-index: 0;
+	transition: all .2s linear;
+}
+.headerLeft_thin span{
+	color: #000;
+	line-height: 50px;
+	transition: all .2s linear;
+}
+/* 滑块 */
+.headerLeft>.moving_block{
+	position: absolute;
+	top: 47px;
+	left: 135px;
+	border-left: 88px solid rgba(0,0,0,.9);
+	border-right: 10px solid transparent;
+	border-bottom: 31px solid rgba(0,0,0,.9);
+	z-index: -1;	
+	transition: all .2s linear;
+}
+.headerLeft>.moving_block_thin{
+	top: 11px;
+	left: 100px;
+	border-left: 88px solid rgba(255,255,255,.9);
+	border-right: 10px solid transparent;
+	border-bottom: 31px solid rgba(255,255,255,.9);
+	transition: all .2s linear;
+}
+/* 中间导航 */
+.navBar{
+	position: absolute;
+	left: 380px;
+	right: 320px;
+	width: 600px;
+	height: 50px;
+	padding-left: 200px;
+}
+.barItem .dropList{
+	display: inline-block;
+	margin-left: 30px;
+}
+.dropList{
+	position: relative;
+}
+.dropItem{
+	position: absolute;
+	left: -20px;
+	top: 50px;
+	width: 160px;
+	height: 0;
+	overflow: hidden;
+	text-align: left;
+	background: #fff;
+	transition: all .3s linear;
+}
+.dropItem_b{
+	top: 70px;
+	background: #000;
+	transition: all .3s linear;
+}
+.dropItem a{
+	color: #333;
+}
+.dropItem_b a{
+	line-height: 50px;
+	color: #fff;
+}
+.dropList:hover .dropItem{
+	display: block;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,.3);
+}
+.dropItem>li{
+	padding-left: 20px;
+}
+.dropItem_b>li{
+	height: 50px;
+	line-height: 50px;
+}
+.dropItem>li:hover{
+	background: #444;
+}
+
+.dropItem>li:hover a{
+	color: #fff;
+}
+
+
+/* 移动块hover */
+/* .top_header>div>:nth-child(2)>ul>li:hover .moving_block{
+	transform: translate(0,0);
+} */
+/* 右边div */
+.top_header .headerRIght{
+	position: absolute;
+	right: 0;
+	width: 236px;
+	height: 50px;
+}
+/* .top_header .headerRIght:{
+	position: relative;
+} */
+.headerRIght span{
+	display: inline-block;
+	line-height: 120px;
+	transition: all .2s linear;
+}
+.headerRIght_thin span{
+	line-height: 50px;
+	transition: all .2s linear;
+}
+.icon-fangdajing:before{
+	margin-left: 100px;
+	font-size: 25px;
+	vertical-align: middle;
+	padding-right: 15px;
+	cursor: pointer;
+}

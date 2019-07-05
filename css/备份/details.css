@@ -1,0 +1,171 @@
+a{
+	text-decoration: none;
+}
+.searchBox{
+	width: 1200px;
+	height: 50px;
+	margin: 40px auto;
+	/* border: 1px solid red; */
+}
+.searchBox>.search{
+	float: right;
+	border: 2px solid #000;
+	width: 468px;
+	height: 46px;
+	position: relative;
+	margin-right: 30px;
+	padding-left: 15px;
+}
+.search>input{
+	display: inline-block;
+	width: 468px;
+	height: 46px;
+	border: 0;
+	outline: 0;
+}
+/* keyWords 要加dom事件点击input后keywords隐藏 */
+.keyWords{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding-top: 9px;
+}
+.keyWords a{
+	display: inline-block;
+	height: 23px;
+	margin-left: 10px;
+	padding: 5px 13px 0;
+	font-size: 12px;
+	background: #e4e4e4;
+	color: #000;
+	transition: color .3s,background .3s;
+}
+.keyWords a:hover{
+	color: #fff;
+	background: #000;
+}
+.search-icon{
+	width: 46px;
+	height: 46px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	outline: none;
+	border: 0;
+	border-left: 2px solid #000;
+	cursor: pointer;
+}
+.search-icon>img{
+	width: 20px;
+}
+/* .filterList:after{
+	content: "";
+	display: block;
+	clear: both;
+} */
+/* filterTitle */
+.filterTitle{
+	width: 1200px;
+	margin: 15px auto;
+}
+/* filter加粗标题 */
+.filter-title{
+	height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 2px solid #000;
+}
+
+.titleBold,._listWrap{
+	width: 100px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	border-bottom: 1px solid #eee;
+	padding: 5px 0;
+}
+._listWrap{
+	width: 1100px;
+	font-weight: normal;
+	text-align: left;
+	float: right;
+	
+}
+._listTag{
+	margin-left: 20px;
+	color: #6a6a6a;
+	padding: 8px;
+	/* border-radius: 5px; */
+}
+._listTag:hover{
+	color: #fff;
+	background: #1c1c1c;
+}
+._listWrap_bottom{
+	/* float: right; */
+	text-align: right;
+}
+._listWrap_bottom a{
+	display: inline-block;
+	color: #000;
+	font-size: 16px;
+	font-weight: bolder;
+	margin: 5px 50px 5px 0;
+	padding: 15px 0;
+	padding-right: 50px;
+}
+.listContent{
+	width: 1200px;
+	margin: 15px auto;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+.list-con .listItem{
+	width: 226px;
+	height: 220px;
+	display: inline-block;
+	color: #000;
+	position: relative;
+	box-sizing: border-box;
+	text-decoration: none;
+	margin-left: 10px;
+	transition:border .3s linear;
+	border: 1px solid transparent;
+}
+.listItem:hover{
+	box-shadow: 0 0 5px 1px rgba(200,200,200,.7);
+	border: 1px solid rgba(200,200,200,.7);
+}
+.details_sec{
+	margin-top: 130px;
+	margin-bottom: 30px;
+}
+.headArea{
+	width: 1000px;
+	margin: 0 auto;
+}
+.headLeft{
+	float: left;
+	width: 600px;
+	height: 560px;
+}
+.headRight{
+	float: right;
+	width: 361px;
+}
+.bigImg{
+	width: 600px;
+	border: 1px solid red;
+}
+.smallImg{
+	margin-top: 10px;
+}
+.smallImg>img{
+	width: 90px;
+	margin: 4px;
+	
+}

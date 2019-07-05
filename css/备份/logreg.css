@@ -1,0 +1,67 @@
+.alphaGround{
+	background: rgba(200,200,200,0.6);
+	width: 100%;
+	height: 900px;
+	position: relative;
+}
+.centerBlack{
+	width: 400px;
+	height: 500px;
+	background: #000;
+	position: fixed;
+	top: 5%;
+	left: 35%;	
+	color: #fff;
+}
+.top{
+	width: 400px;
+	position: relative;
+}
+.top div{
+	display: inline-block;
+	}
+.top div:first-child{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.top div:last-child{
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	color: #aaa;
+}
+.blackBlank{
+	width: 100%;
+	height: 100px;
+}
+._login{
+	width: 180px;
+	height: 50px;
+	background: #131313;
+	margin: 30px auto;
+	text-align: center;
+	line-height: 50px;
+}
+._login .qq{
+	color: #3e94f8;
+}
+._login .weixin{
+	color: #3cff00;
+
+}
+.sub{
+	text-align: center;
+	color: #666;
+}
+.centerBlack .more{
+	color: #666;
+	margin-top: 70px;
+	margin-left: 30px;
+}
+.more p{
+	padding-bottom: 15px;
+}
+.more span{
+	margin-right: 5px;
+}

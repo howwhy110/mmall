@@ -4,11 +4,10 @@
 	<title>装备前线首页</title>
 	<meta charset="utf-8">
 	<!-- 引入公用样式 -->
-	<link rel="stylesheet" type="text/css" href="./css/comm.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	<link rel="stylesheet" type="text/css" href="./css/index_header.css">
-	<link rel="stylesheet" type="text/css" href="./css/iconfont/iconfont.css">
-
+	<link rel="stylesheet" type="text/css" href="../css/comm.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/index_header.css">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont/iconfont.css">
 </head>
 <body onload="list()">
 	<!-- <header>
@@ -31,44 +30,22 @@
 				<!-- 中间导航 -->
 			<div class="navBar">
 				<ul class="barItem">
-					<li class="dropList">
+					<li>
 						<a href="javascript:;">装备社区</a>
-						<ul class="dropItem">
-							<li><a href="javascript:;">装备展示区</a></li>
-							<li><a href="javascript:;">zf生活</a></li>
-							<li><a href="javascript:;">提问区</a></li>
-							<li><a href="javascript:;">发车发车！</a></li>
-							<li><a href="javascript:;">参议院</a></li>
-							<li><a href="javascript:;">交易信息区</a></li>
-							<li><a href="javascript:;">装备情报</a></li>
-						</ul>
 					</li>
-					<li class="dropList">
+					<li>
 						<a href="javascript:;">装备商店</a>
-						<ul class="dropItem">
-							<li><a href="javascript:;">机械键盘</a></li>
-							<li><a href="javascript:;">键帽</a></li>
-							<li><a href="javascript:;">发烧HiFi</a></li>
-							<li><a href="javascript:;">模玩手办</a></li>
-						</ul>
 					</li>
-					<li class="dropList">
-						
+					<li>
 						<a href="javascript:;">发车投票</a>
 					</li>
-					<li class="dropList">
+					<li>
 						<a href="javascript:;">MYKB</a>
-						<ul class="dropItem">
-							<li><a href="javascript:;">定制工具</a></li>
-							<li><a href="javascript:;">热门设计</a></li>
-							<li><a href="javascript:;">MYKB plus 主题键帽</a></li>
-							<li><a href="javascript:;">定制说明</a></li>
-					</ul>
 					</li>
 				</ul>
 			</div>	
 				<!-- 右边登陆 -->
-			<div class="headerRight">
+			<div class="headerRIght">
 				<div>
 					<div class="_hover">	
 						
@@ -573,9 +550,45 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br>
 		
 	</section>
-	<footer></footer>
-	<script src="./js/jquery-1.11.3.js"></script>
-	<script src="./js/index.js"></script>
-	<script src="./js/footer.js"></script>
+	<footer>
+		<iframe src="footer.html" frameborder="0"
+		scrolling="no" class="bottom_iframe"></iframe>
+	</footer>
+	<script>
+		function list(){
+			var xhr=new XMLHttpRequest();
+			xhr.open("get","/product/index");
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					var result=xhr.responseText;
+					var arr=JSON.parse(result);
+					var html="";
+					for(var i=0;i<arr.length;i++){
+						html+=`
+							<a href="javascript:;" target="_black" title="" class="listItem">
+				<div class="listWarp">
+					<div class="lwTop">
+						<img src="../img/product/keyboradlist/${arr[i].pic}">
+					</div>
+					<span class="iconfont icon-shandian-shi">现货</span>
+					
+					<div class="lwBottom">
+						<p class="mainTitle">${arr[i].title}</p>
+						<p class="subTitle">${arr[i].subTitle}</p>
+						<p class="price">
+							<span>${arr[i].price}元</span>
+						</p>
+					</div>
+				</div>
+			</a>
+						`;
+
+					}
+					load_list.innerHTML=html;
+				}
+			}
+			xhr.send(null);
+		}
+	</script>
 </body>
 </html>
