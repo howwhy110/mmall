@@ -23,11 +23,13 @@
 	background: #000;
 	position: fixed;
 	top: -500px;
-	left: 35%;	
+	left: 50%;	
+	margin-left:-200px;
 	opacity:0;
 	color: #fff;
 	box-shadow:0 0 20px 10px rgba(200,200,200,.2);
 	z-index:-1;
+	overflow:hidden;
 }
 .showCenterBlack{
 	top: 7%;
@@ -41,6 +43,20 @@
 	z-index:-1;
 	transition:all .3s linear;
 }
+.main{
+	/* float:left; */
+	width: 1200px;
+	height: 500px;
+}
+.main>div{
+	width:400px;
+	height:500px;
+}
+.tLeft,.tMiddle,.tRight,.bLeft,.bRight{
+	position: relative;
+	float:left;
+}
+
 .top{
 	width: 400px;
 	position: relative;
@@ -48,12 +64,19 @@
 .top div{
 	display: inline-block;
 	}
-.top div:first-child{
+.top .topMiddle{
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
 }
-.top div:last-child{
+.top .back, .top .back2{
+	position: absolute;
+	top: 20px;
+	left:40px;
+	color: #aaa;
+	cursor: pointer;
+}
+.top .close{
 	position: absolute;
 	top: 20px;
 	right: 40px;
@@ -79,9 +102,10 @@
 	color: #3cff00;
 
 }
-.sub{
+.phoneReg{
 	text-align: center;
 	color: #666;
+	cursor:pointer;
 }
 .centerBlack .more{
 	color: #666;
@@ -93,4 +117,78 @@
 }
 .more span{
 	margin-right: 5px;
+}
+.ipt input{
+	color:#fff;
+	font-size:14px;
+	outline: 0;
+	border:0;
+	background: transparent;
+	display:block;
+	margin:0 auto;
+	margin-bottom:20px;
+	width:240px;
+	border-bottom:1px solid #222;
+	padding:8px 0;
+}
+.mBtn{
+	color:#eee;
+	width:100%;
+	text-align: center;
+}
+.mBtn div{
+	display:inline-block;
+	width:120px;
+	margin:10px 6px;
+	padding:10px 0;
+	background: #252525;
+	transition:.3s linear;
+}
+.mBtn div:first-child{
+	color:#666;
+}
+.mBtn div:first-child:hover{
+	background:#464646;
+	color:#fff;
+}
+.mBtn div:last-child:hover{
+	background:#fff;
+	color:#000;
+}
+.fgtpwd{
+	display:block;
+	width:240px;
+	padding:0 80px;
+	margin-top:10px;
+	cursor:pointer;
+	text-decoration: underline;
+}
+.ipt>span{
+	position:absolute;
+	right:80px;
+	display:inline-block;
+	background: #464646;
+	padding:5px 10px;
+}
+.cofirm{
+	position:absolute;
+	left:50%;
+	border:0;
+	outline:0;
+	color:#eee;
+	width:120px;
+	margin:10px 6px;
+	padding:10px 0;
+	background: #252525;
+	transition:.3s linear;
+}
+.cofirm:hover{
+	background:#464646;
+	color:#eee;
+	transition:.3s linear;
+}
+.tips{
+	width:100%;
+	display: inline-block;
+	text-align:center;
 }

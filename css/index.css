@@ -306,6 +306,8 @@
 	width: 300px;
 	border: 0;
 	outline: 0;
+	font-size: 18px;
+    margin-bottom: 5px;
 }
 .btn_sec_m_search{
 	background: #000;
